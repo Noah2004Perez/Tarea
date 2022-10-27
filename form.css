@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    background-image: url(/assets/pretty-heroic@3000x2000px.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* My name */
+
+div.name-autor{
+    margin: 5px 60px;
+    font-family: 'Fasthand', cursive;
+    color: white;
+    font-size: 18px;
+    animation: name 5s infinite;
+}
+
+@keyframes name {
+    from{
+        color: white;
+    }
+
+    to{
+        color: cyan;
+        opacity: 0;
+    }
+}
+
+/* Card */
+.card {
+    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    width: 400px;
+    height: 470px;
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: #f7ba2b;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+    margin: 10px auto;
+   }
+   
+.card::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    filter: blur(25px);
+    background: #f7ba2b;
+    background: var(--background);
+    transition: opacity .5s;
+   }
+   
+.card-info {
+    --color: #181818;
+    background: var(--color);
+    color: #f7ba2b;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: .7rem;
+   }
+   
+   /*Hover*/
+.card:hover::after {
+    opacity: 0;
+   }
+   
+.card:hover .card-info {
+    transition: color 1s;
+}
+
+section{
+    padding: 1rem;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+div.name-ape > input::placeholder,
+div.cedula > input::placeholder,
+div.tlf > input::placeholder,
+div.direccion > textarea::placeholder,
+div.email > input::placeholder{
+    color:darkgray;
+    padding-left: 5px;
+}
+
+div.name-ape{
+    display: flex;
+    gap: 10px;
+}
+
+div.name-ape > input{
+    background-color: #181818;
+    border: 2px solid #ea5358;
+    border-radius: 8px;
+    color:darkgray;
+    margin-bottom: 20px;
+    height: 20px;
+}
+
+
+div.cedula > select,
+div.tlf > select{
+    background-color: #181818;
+    border: 2px solid #ea5358;
+    border-radius: 8px;
+    color:darkgray;
+}
+
+div.cedula > input,
+div.tlf > input{
+    background-color: #181818;
+    border: 2px solid #ea5358;
+    border-radius: 8px;
+    color:darkgray;
+    width: 285px;
+    margin-bottom: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+div.cedula > input{
+    width: 298px;
+}
+
+div.direccion > textarea{
+    background-color: #181818;
+    border: 2px solid #ea5358;
+    border-radius: 8px;
+    color:darkgray;
+    margin-bottom: 20px;
+    padding-top: 5px;
+}
+
+div.email > input{
+    background-color: #181818;
+    border: 2px solid #ea5358;
+    border-radius: 8px;
+    color:darkgray;
+    margin-bottom: 30px;
+    height: 20px;
+    width: 350px;
+}
+
+div.botton{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+div.botton input[type="submit"],
+div.botton input[type="reset"]{
+    width: 170px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #dda729;
+    border: 1px solid whitesmoke;
+    font-weight: 600;
+    transition: .2s ease-in; 
+}
+
+div.botton input[type="submit"]:hover,
+div.botton input[type="reset"]:hover{
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 330px) and (max-width: 420px){
+    body{
+        background-image: url(/assets/pretty-heroic@1000x1000px.jpg);
+        background-color: black;
+    }
+
+    .card{
+        width: 300px;
+        height: 430px;
+    }
+
+    div.name-ape > input{
+        width: 120px;
+    }
+
+    div.cedula > input{
+        width: 200px;
+    }
+
+    div.tlf > input{
+        width: 186px;
+    }
+
+    div.email > input{
+        width: 255px;
+    }
+
+    div.botton input[type="submit"],
+    div.botton input[type="reset"]{
+    width: 140px;
+    height: 30px;
+    }
+
+    div.name-autor{
+        text-align: center;
+        margin-top: 50px;
+    }
+}

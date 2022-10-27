@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Form</title>
+</head>
+<body>
+
+    <main class="card">
+        <div class="card-info">
+          <section>
+            <h1>Ingresa tus datos</h1>
+
+          <form>
+            <div class="name-ape">
+                <input type="text" placeholder="Nombre"  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Por favor, no utilice signos ni números" required>
+                <input type="text" placeholder="Apellido"  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Por favor, no utilice signos ni números" required>
+            </div>
+
+            <div class="cedula">
+                <label for="Cd-indentidad"></label>
+                  <select name="indentificasion" id="type-ident" required>
+                    <option value="Venezolano">V-</option>
+                    <option value="Extranjero">E-</option>
+                    <option value="Gubernamental">G-</option>
+                    <option value="Juridico">J-</option>
+                  </select>
+                  <input type="number" name="identificasion" id="Cd-indentidad" placeholder="Número de cedula" required>
+            </div>
+
+            <div class="tlf">
+              <label for="number-tlf"></label>
+                <select name="nro-serv" id="type-nro" required>
+                  <option value="movilnet-one">0416</option>
+                  <option value="movilnet-two">0426</option>
+                  <option value="movistar-one">0424</option>
+                  <option value="movistar-two">0414</option>
+                  <option value="digitel">0412</option>
+                </select>
+                <input type="tel" name="nro-tld" id="number-tlf" placeholder="Número de telefono" required>
+            </div>
+
+            <div class="direccion">
+              <textarea name="" id="" cols="30" rows="5" placeholder="ingresa tu direccion" required></textarea>
+            </div>
+
+            <div class="email">
+              <input type="email" name="email" id="u-email" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Formate invalido" placeholder="Ingrese su correo electronico" required>
+            </div>
+
+            <div class="botton">
+              <input type="reset" value="Limpiar">
+              <input type="submit" value="Enviar">
+            </div>
+          </form>
+        </section>
+        </div>
+      </main>
+
+      <div class="name-autor">
+        <p>Eduardo Pérez</p>
+      </div>
+
+</body>
+</html>
