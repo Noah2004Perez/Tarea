@@ -19,13 +19,13 @@
 
             <form action="https://formsubmit.co/reddishwhite2004@gmail.com" method="POST">
             <div class="name-ape">
-                <input type="text" placeholder="Nombre"  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Por favor, no utilice signos ni números" required>
-                <input type="text" placeholder="Apellido"  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Por favor, no utilice signos ni números" required>
+                <input type="text" placeholder="Nombre"  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Por favor, no utilice signos ni números" value="nombre" required>
+                <input type="text" placeholder="Apellido"  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Por favor, no utilice signos ni números" value="apellido" required>
             </div>
 
             <div class="cedula">
-                <label for="identificasion"></label>
-                  <select name="identificasion" id="type-ident" required>
+                <label for="identificasion-type"></label>
+                  <select name="identificasion-type" id="type-ident" required>
                     <option value="Venezolano">V-</option>
                     <option value="Extranjero">E-</option>
                     <option value="Gubernamental">G-</option>
@@ -35,8 +35,8 @@
             </div>
 
             <div class="tlf">
-              <label for="number-tlf"></label>
-                <select name="number-tlf" id="type-nro" required>
+              <label for="number-tlf-type"></label>
+                <select name="number-tlf-type" id="type-nro" required>
                   <option value="movilnet-one">0416</option>
                   <option value="movilnet-two">0426</option>
                   <option value="movistar-one">0424</option>
@@ -47,7 +47,7 @@
             </div>
 
             <div class="direccion">
-              <textarea name="" id="" cols="30" rows="5" placeholder="ingresa tu direccion" required></textarea>
+              <textarea name="dirección" id="" cols="30" rows="5" placeholder="ingresa tu direccion" required></textarea>
             </div>
 
             <div class="email">
