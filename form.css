@@ -23,17 +23,16 @@ body{
 div.name-autor{
     margin: 5px 60px;
     font-family: 'Fasthand', cursive;
-    color: white;
     font-size: 18px;
     animation: name 5s infinite;
 }
 
 @keyframes name {
-    from{
-        color: white;
+    70%{
+        color: cyan;
     }
 
-    to{
+    60%{
         color: cyan;
         opacity: 0;
     }
@@ -61,7 +60,7 @@ div.name-autor{
     left: 0;
     right: 0;
     z-index: -1;
-    height: 100%;
+    height: 94%;
     width: 100%;
     filter: blur(25px);
     background: #f7ba2b;
@@ -95,7 +94,7 @@ section{
 h1{
     text-align: center;
     margin-bottom: 25px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 div.name-ape > input::placeholder,
@@ -103,7 +102,7 @@ div.cedula > input::placeholder,
 div.tlf > input::placeholder,
 div.direccion > textarea::placeholder,
 div.email > input::placeholder{
-    color:darkgray;
+    color: blanchedalmond;
     padding-left: 5px;
 }
 
@@ -115,10 +114,10 @@ div.name-ape{
 div.name-ape > input{
     background-color: #181818;
     border: 2px solid #ea5358;
+    color: blanchedalmond;
     border-radius: 8px;
-    color:darkgray;
     margin-bottom: 20px;
-    height: 20px;
+    height: 30px;
 }
 
 
@@ -127,18 +126,19 @@ div.tlf > select{
     background-color: #181818;
     border: 2px solid #ea5358;
     border-radius: 8px;
-    color:darkgray;
+    color: blanchedalmond;
+    height: 30px;
 }
 
 div.cedula > input,
 div.tlf > input{
     background-color: #181818;
     border: 2px solid #ea5358;
+    color: blanchedalmond;
     border-radius: 8px;
-    color:darkgray;
     width: 285px;
     margin-bottom: 20px;
-    height: 20px;
+    height: 30px;
     margin-left: 10px;
 }
 
@@ -149,8 +149,8 @@ div.cedula > input{
 div.direccion > textarea{
     background-color: #181818;
     border: 2px solid #ea5358;
+    color: blanchedalmond;
     border-radius: 8px;
-    color:darkgray;
     margin-bottom: 20px;
     padding-top: 5px;
 }
@@ -158,10 +158,10 @@ div.direccion > textarea{
 div.email > input{
     background-color: #181818;
     border: 2px solid #ea5358;
+    color: blanchedalmond;
     border-radius: 8px;
-    color:darkgray;
-    margin-bottom: 20px;
-    height: 20px;
+    margin-bottom: 15px;
+    height: 30px;
     width: 350px;
 }
 
@@ -197,7 +197,7 @@ div.botton input[type="reset"]:hover{
 
     .card{
         width: 300px;
-        height: 430px;
+        height: 455px;
     }
 
     div.name-ape > input{
