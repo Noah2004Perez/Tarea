@@ -21,25 +21,30 @@ body{
 /* My name */
 
 div.name-autor{
-    margin: 5px 60px;
+    margin: 0px 0px 40px 30px;
+    position: fixed;
     font-family: 'Fasthand', cursive;
-    font-size: 18px;
+    font-size: 22px;
     animation: name 5s infinite;
 }
 
 @keyframes name {
     70%{
-        color: cyan;
+        color: red;
     }
 
     60%{
-        color: cyan;
+        color:mediumspringgreen;
         opacity: 0;
     }
 }
 
 /* Card */
 .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
     --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
     width: 400px;
     height: 470px;
@@ -50,18 +55,17 @@ div.name-autor{
     background: var(--background);
     position: relative;
     z-index: 1;
-    margin: 10px auto;
-   }
+}
    
 .card::after {
     position: absolute;
     content: "";
     top: 30px;
-    left: 0;
-    right: 0;
+    left: 1;
+    right: 1;
     z-index: -1;
-    height: 94%;
-    width: 100%;
+    height: 92%;
+    width: 92%;
     filter: blur(25px);
     background: #f7ba2b;
     background: var(--background);
@@ -89,12 +93,16 @@ div.name-autor{
 
 section{
     padding: 1rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 h1{
     text-align: center;
     margin-bottom: 25px;
     margin-top: 10px;
+    margin-right: 30px;
 }
 
 div.name-ape > input::placeholder,
@@ -169,6 +177,7 @@ div.botton{
     display: flex;
     justify-content: center;
     gap: 10px;
+    margin-right: 30px;
 }
 
 div.botton input[type="submit"],
@@ -193,11 +202,17 @@ div.botton input[type="reset"]:hover{
     body{
         background-image: url(/assets/pretty-heroic@1000x1000px.jpg);
         background-color: black;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .card{
         width: 300px;
         height: 460px;
+    }
+
+    from{
+        width: 100px;
     }
 
     div.name-ape > input{
@@ -223,7 +238,8 @@ div.botton input[type="reset"]:hover{
     }
 
     div.name-autor{
+        position: static;
         text-align: center;
-        margin-top: 50px;
+        margin-top: 30px;
     }
 }
