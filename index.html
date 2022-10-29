@@ -23,8 +23,8 @@
         
         <form action="https://formsubmit.co/reddishwhite2004@gmail.com" method="POST">
           <div class="name-ape">
-              <input type="text" placeholder="Nombre"  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Por favor, no utilice signos ni números" name="nombre" required>
-              <input type="text" placeholder="Apellido"  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Por favor, no utilice signos ni números" name="apellido" required>
+              <input type="text" placeholder="Nombre"  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Por favor, no utilice signos ni números" name="nombre" autocomplete="off" required>
+              <input type="text" placeholder="Apellido"  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Por favor, no utilice signos ni números" name="apellido" autocomplete="off" required>
           </div>
 
           <div class="cedula">
@@ -35,7 +35,7 @@
                   <option value="Gubernamental">G-</option>
                   <option value="Juridico">J-</option>
                 </select>
-                  <input type="number" name="identificasion" id="Cd-indentidad" placeholder="Número de cedula" required>
+                  <input type="number" name="identificasion" id="Cd-indentidad" placeholder="Número de cedula" autocomplete="off" required>
           </div>
 
           <div class="tlf">
@@ -47,15 +47,15 @@
                 <option value="movistar-two">0414</option>
                 <option value="digitel">0412</option>
               </select>
-              <input type="tel" name="number-tlf" id="number-tlf" placeholder="Número de telefono" required>
+              <input type="tel" name="number-tlf" id="number-tlf" placeholder="Número de telefono" autocomplete="off" required>
           </div>
 
           <div class="direccion">
-            <textarea name="dirección" id="" cols="30" rows="5" placeholder="ingresa tu dirección" required></textarea>
+            <textarea name="dirección" id="" cols="30" rows="5" placeholder="ingresa tu dirección" autocomplete="off" required></textarea>
           </div>
 
           <div class="email">
-            <input type="email" name="email" id="u-email" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Formate invalido" placeholder="Ingrese su correo electronico" required>
+            <input type="email" name="email" id="u-email" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Formate invalido" placeholder="Ingrese su correo electronico" autocomplete="off" required>
           </div>
               
           <div class="botton">
