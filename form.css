@@ -93,7 +93,7 @@ div.name-autor{
 
 section{
     padding: 1rem;
-    width: 100%;
+    width: 90%;
     height: 100%;
     position: relative;
 }
@@ -110,16 +110,25 @@ div.cedula > input::placeholder,
 div.tlf > input::placeholder,
 div.direccion > textarea::placeholder,
 div.email > input::placeholder{
-    color: blanchedalmond;
+    color: #ffebcd;
     padding-left: 5px;
+}  
+
+div.direccion > textarea{
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 70px;
+    min-height: 70px;
 }
 
 div.name-ape{
     display: flex;
     gap: 10px;
+    width: 100%;
 }
 
 div.name-ape > input{
+    width: 50%;
     background-color: #181818;
     border: 2px solid #ea5358;
     color: blanchedalmond;
@@ -144,7 +153,7 @@ div.tlf > input{
     border: 2px solid #ea5358;
     color: blanchedalmond;
     border-radius: 8px;
-    width: 285px;
+    width: 280px;
     margin-bottom: 20px;
     height: 30px;
     margin-left: 10px;
@@ -177,7 +186,7 @@ div.botton{
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-right: 30px;
+    margin: 0 auto;
 }
 
 div.botton input[type="submit"],
