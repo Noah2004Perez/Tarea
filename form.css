@@ -153,14 +153,14 @@ div.tlf > input{
     border: 2px solid #ea5358;
     color: blanchedalmond;
     border-radius: 8px;
-    width: 280px;
+    width: 285px;
     margin-bottom: 20px;
     height: 30px;
     margin-left: 10px;
 }
 
 div.cedula > input{
-    width: 298px;
+    width: 300px;
 }
 
 div.direccion > textarea{
